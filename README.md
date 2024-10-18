@@ -30,3 +30,20 @@ The **Exam Bill Management System (EMS)** is a comprehensive solution developed 
 
 The project follows Django's standard project structure with added REST API support for better integration and data handling:
 
+ExamBillManagementSystem/ ├── exam_management/ │ ├── migrations/ │ ├── models.py │ ├── views.py │ ├── serializers.py │ ├── urls.py │ └── admin.py ├── templates/ │ ├── index.html │ ├── dashboard.html ├── static/ │ ├── css/ │ ├── js/ │ ├── images/ ├── manage.py ├── requirements.txt └── README.md
+
+
+## ⚙️ Installation and Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/ExamBillManagementSystem.git
+   cd ExamBillManagementSystem
+python -m venv env
+source env/bin/activate  # For Linux/Mac
+env\Scripts\activate  # For Windows
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
